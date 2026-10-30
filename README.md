@@ -1,5 +1,7 @@
 # Mixing Skills · 스킬 조합실
 
+[![Offline checks](https://github.com/castle923/Mixing-skills/actions/workflows/test.yml/badge.svg)](https://github.com/castle923/Mixing-skills/actions/workflows/test.yml)
+
 **설치한 AI 스킬을 작업별로 고르고, 함께 쓸 조건을 원문 근거로 확인하는 로컬 워크벤치입니다.**
 
 스킬이 많아지면 이름만으로는 용도와 필요한 도구를 파악하기 어렵습니다. 여러 스킬을 선택해도 실제로 연결되는지, 실행 조건이 무엇인지 알기 어렵습니다. Mixing Skills는 카탈로그·문서 검색·추천을 한 화면에 모으고, 추천 이유에서 설명서의 경로와 줄 번호로 돌아갈 수 있게 합니다.
@@ -101,9 +103,9 @@ npx playwright install chromium
 npm run test:ui
 ```
 
-UI 테스트는 `smoke_demo_ui.cjs`, `smoke_ai_ui.cjs`로 데모 탐색과 AI 흐름을 확인합니다. AI 테스트는 모의 응답을 사용하며 실제 API 연결을 증명하지 않습니다. Windows에서 검증한 프로젝트이며 다른 운영체제의 Python CLI 실행은 아직 검증하지 않았습니다.
+UI 테스트는 `smoke_demo_ui.cjs`, `smoke_ai_ui.cjs`로 데모 탐색과 AI 흐름을 확인합니다. AI 테스트는 모의 응답을 사용하며 실제 API 연결을 증명하지 않습니다. Windows 로컬 Chrome과 Ubuntu CI Chromium에서 데모 서버·화면을 검증했습니다. macOS는 미검증입니다.
 
-공개 패키지에서 **Python 테스트 40개와 Chrome의 데모·AI 모의 UI 테스트를 통과**했습니다. 데모 화면은 API 키를 제거한 별도 프로세스에서 촬영했으며 실제 사용자 자료를 포함하지 않습니다. [상세 검증 기록](docs/testing.md)을 확인하세요. GitHub Actions에는 Python 3.11/3.13 × Windows/Linux 및 Chromium 검사를 구성했으며 원격 실행 결과는 Actions에서 확인할 수 있습니다.
+공개 패키지에서 **Python 테스트 40개와 Chrome의 데모·AI 모의 UI 테스트를 통과**했습니다. 데모 화면은 API 키를 제거한 별도 프로세스에서 촬영했으며 실제 사용자 자료를 포함하지 않습니다. [상세 검증 기록](docs/testing.md)을 확인하세요. GitHub Actions에는 Python 3.11/3.13 × Windows/Linux 및 Chromium 검사를 구성했으며 최초 공개 커밋의 원격 검사 5개가 모두 통과했습니다. [검증 실행 기록](https://github.com/castle923/Mixing-skills/actions/runs/40978055363)에서 결과를 확인할 수 있습니다.
 
 ![원문 근거와 역할별 로컬 추천](docs/images/recommendation-desktop.png)
 
