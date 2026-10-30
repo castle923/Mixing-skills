@@ -1,0 +1,192 @@
+{
+  "pairs": [
+    {
+      "skills": [
+        "free-design-references",
+        "frontend-design"
+      ],
+      "level": "supported",
+      "message": "무료 참고 자료 선별 후 화면 구현으로 연결하는 조합입니다.",
+      "evidence": [
+        {
+          "skill": "free-design-references",
+          "needle": "시각 구현은"
+        }
+      ]
+    },
+    {
+      "skills": [
+        "free-design-references",
+        "ui-color-palettes"
+      ],
+      "level": "supported",
+      "message": "참고 자료 선별과 로컬 팔레트 검토를 함께 사용할 수 있습니다.",
+      "evidence": [
+        {
+          "skill": "free-design-references",
+          "needle": "색상 방향을 정할 때는"
+        }
+      ]
+    },
+    {
+      "skills": [
+        "free-design-references",
+        "recurrencia-ui"
+      ],
+      "level": "supported",
+      "message": "반복 일정 UI를 만들 때 함께 참고하도록 명시되어 있습니다.",
+      "evidence": [
+        {
+          "skill": "free-design-references",
+          "needle": "반복 일정"
+        }
+      ]
+    },
+    {
+      "skills": [
+        "frontend-design",
+        "ui-color-palettes"
+      ],
+      "level": "supported",
+      "message": "화면 설계와 색상 자료의 역할이 이어집니다. 실제 대비는 별도 확인해야 합니다.",
+      "evidence": [
+        {
+          "skill": "frontend-design",
+          "needle": "Color:"
+        },
+        {
+          "skill": "ui-color-palettes",
+          "needle": "의미 토큰"
+        }
+      ]
+    },
+    {
+      "skills": [
+        "hyperframes",
+        "hyperframes-cli"
+      ],
+      "level": "supported",
+      "message": "HyperFrames 장면 제작과 CLI 사용 지침을 연결하는 조합입니다.",
+      "evidence": [
+        {
+          "skill": "hyperframes",
+          "needle": "see the hyperframes-cli skill"
+        }
+      ]
+    },
+    {
+      "skills": [
+        "remotion-create",
+        "remotion-render"
+      ],
+      "level": "review",
+      "message": "Remotion 프로젝트 제작 후 렌더링 순서로 사용합니다. 프로젝트 파일·의존성과 실제 렌더링은 별도 확인이 필요합니다.",
+      "evidence": [
+        {
+          "skill": "remotion-create",
+          "needle": "Each real project"
+        },
+        {
+          "skill": "remotion-render",
+          "needle": "remotion render"
+        }
+      ]
+    },
+    {
+      "skills": [
+        "remotion-create",
+        "hyperframes"
+      ],
+      "level": "review",
+      "message": "주 제작 방식을 선택하세요. Remotion 프로젝트와 HyperFrames HTML은 별도 제작 경로이며 자동 변환을 보장하지 않습니다.",
+      "evidence": [
+        {
+          "skill": "remotion-create",
+          "needle": "Remotion project"
+        },
+        {
+          "skill": "hyperframes",
+          "needle": "HTML is the source of truth"
+        }
+      ]
+    },
+    {
+      "skills": [
+        "qa",
+        "qa-only"
+      ],
+      "level": "review",
+      "message": "수정까지 할지 보고만 할지 역할을 정하세요. 이름이 비슷해도 작업 범위가 다릅니다.",
+      "evidence": [
+        {
+          "skill": "qa",
+          "needle": "description:"
+        },
+        {
+          "skill": "qa-only",
+          "needle": "description:"
+        }
+      ]
+    },
+    {
+      "skills": [
+        "freeze",
+        "unfreeze"
+      ],
+      "level": "review",
+      "message": "편집 범위 제한과 해제는 서로 다른 단계입니다. 동시에 적용할 상태를 명시하세요.",
+      "evidence": [
+        {
+          "skill": "freeze",
+          "needle": "description:"
+        },
+        {
+          "skill": "unfreeze",
+          "needle": "description:"
+        }
+      ]
+    }
+  ],
+  "requirements": {
+    "artemis-android": {
+      "needle": "기기",
+      "message": "ARTEMIS MCP와 사용자가 ADB를 허용한 Android 기기가 필요합니다. 연결 기기 수는 실제 진단해야 합니다."
+    },
+    "graphify": {
+      "needle": "--mcp",
+      "message": "Graphify의 대상 프로젝트 인덱스와 분석 준비 상태를 확인하세요."
+    },
+    "agent-browser": {
+      "needle": "Local Windows runtime",
+      "message": "브라우저 런타임과 작업용 세션이 필요합니다."
+    },
+    "chrome-browser": {
+      "needle": "extension is connected",
+      "message": "이 스킬 전용 Chrome 확장 연결이 필요합니다. 다른 브라우저 MCP 등록만으로 준비 완료가 되지 않습니다."
+    },
+    "remotion-render": {
+      "needle": "Each real project",
+      "message": "Remotion 프로젝트·의존성·렌더링 환경이 필요합니다."
+    },
+    "remotion-create": {
+      "needle": "Each real project",
+      "message": "프로젝트 폴더와 의존성 선언이 필요합니다."
+    },
+    "hyperframes": {
+      "needle": "Each real project",
+      "message": "HyperFrames 프로젝트와 영상 런타임이 필요합니다."
+    },
+    "google-workspace": {
+      "needle": "description:",
+      "message": "Google 계정 연결과 작업별 접근 권한은 실제 도구에서 확인해야 합니다."
+    },
+    "coordinate": {
+      "needle": "description:",
+      "message": "병렬 위임을 실행하려면 별도의 사용자 요청과 적용 지침을 확인해야 합니다. 장바구니 선택만으로 실행하지 않습니다."
+    },
+    "manager": {
+      "needle": "description:",
+      "message": "에이전트 역할 분담을 실제로 실행할지는 사용자 요청과 적용 지침을 따릅니다. 장바구니 선택은 실행 승인이 아닙니다."
+    }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "CATEGORIES": {
+    "디자인": "frontend-design free-design-references ui-color-palettes recurrencia-ui design-consultation design-html design-review design-shotgun ios-design-review plan-design-review",
+    "영상·모션": "gsap hyperframes hyperframes-cli hyperframes-registry website-to-hyperframes",
+    "문서·리서치": "docs docx pdf pptx xlsx markitdown make-pdf document-generate document-release humanize-korean deep-research google-workspace morning diagram",
+    "브라우저·기기": "agent-browser agent-reach browse built-in-browser chrome-browser computer-use connect-chrome open-gstack-browser setup-browser-cookies scrape hackernews-frontpage artemis-android ios-clean ios-fix ios-qa ios-sync",
+    "기획·협업": "coordinate manager captain pair-agent office-hours product-manager-toolkit spec plan-ceo-review plan-eng-review plan-devex-review plan-tune autoplan context-save context-restore import-memory learn retro",
+    "개발·검증": "code-reviewer graphify reverse-engineer-anything systematic-debugging verification-before-completion investigate review qa qa-only benchmark benchmark-models cso careful guard freeze unfreeze devex-review deslop-shared-libs health test-audit eval-plan canary"
+  },
+  "TRANSLATIONS": {}
+}

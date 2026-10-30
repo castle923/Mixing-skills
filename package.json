@@ -1,0 +1,11 @@
+{
+  "name": "mixing-skills-ui-checks",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "test:ui": "node smoke_demo_ui.cjs && node smoke_ai_ui.cjs"
+  },
+  "devDependencies": {
+    "playwright": "1.62.1"
+  }
+}

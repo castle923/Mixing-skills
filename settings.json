@@ -1,0 +1,9 @@
+{
+  "port": 8771,
+  "skill_roots": [
+    "examples/skills"
+  ],
+  "project_roots": [
+    "examples/project"
+  ]
+}

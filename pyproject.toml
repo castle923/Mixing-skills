@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mixing-skills"
+version = "0.1.0"
+description = "Local skill selection, evidence retrieval, and optional bounded AI recommendations"
+requires-python = ">=3.11"
+dependencies = []
+
+[project.optional-dependencies]
+mcp = ["mcp==1.30.0"]
+
+[tool.setuptools]
+py-modules = ["workbench", "ai_service", "skill_inventory", "skills_mcp"]
